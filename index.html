@@ -256,6 +256,107 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 /* Tiny help line on cover */
 .help-line{position:absolute;bottom:54px;left:56px;font-size:11px;color:var(--ink-soft);letter-spacing:.08em;text-transform:uppercase}
 .help-line kbd{background:var(--paper-cool);border:1px solid var(--rule);border-bottom-width:2px;border-radius:4px;padding:1px 6px;font-family:inherit;font-size:10.5px;color:var(--navy);font-weight:700;margin:0 3px}
+
+/* ============== PARTNERSHIP REVIEW FRONT-MATTER ============== */
+
+/* Agenda */
+.agenda-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 36px;max-width:1100px}
+.agenda-row{display:flex;align-items:flex-start;gap:18px;padding:14px 8px;border-bottom:1px solid var(--rule)}
+.agenda-num{font-size:34px;font-weight:800;color:var(--accent);line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-.02em;min-width:54px}
+.agenda-title{font-size:18px;font-weight:800;color:var(--navy);letter-spacing:-.01em}
+.agenda-desc{font-size:13.5px;color:var(--ink-soft);line-height:1.45;margin-top:3px}
+
+/* Introductions / bio cards */
+.bio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1180px}
+.bio-card{background:linear-gradient(180deg,#fff 0%,#f6faff 100%);border:1px solid var(--rule);border-radius:14px;padding:26px 22px;display:flex;flex-direction:column;align-items:flex-start;
+  box-shadow:0 6px 22px rgba(11,31,58,.05)}
+.bio-avatar{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--navy) 0%,var(--blue) 100%);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;letter-spacing:.04em;margin-bottom:16px;
+  box-shadow:0 4px 14px rgba(11,31,58,.18)}
+.bio-name{font-size:20px;font-weight:800;color:var(--navy);letter-spacing:-.01em}
+.bio-role{font-size:12.5px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.12em;margin-top:4px}
+.bio-blurb{font-size:13.5px;color:var(--ink-soft);line-height:1.5;margin-top:12px}
+
+/* Company Overview */
+.co-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:32px;max-width:1180px}
+.co-block{padding:6px 0}
+.co-eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:11px;color:var(--blue);font-weight:700;margin-bottom:8px}
+.co-statement{font-size:18px;color:var(--navy);font-weight:600;line-height:1.45;letter-spacing:-.005em}
+.co-values{font-size:17px;color:var(--navy);font-weight:700;letter-spacing:.04em}
+.co-stats{display:flex;flex-direction:column;gap:14px}
+.co-stat{background:linear-gradient(180deg,#fff 0%,#f4f9fe 100%);border:1px solid var(--rule);border-radius:12px;padding:16px 20px;
+  display:grid;grid-template-columns:auto 1fr;align-items:center;column-gap:20px;box-shadow:0 4px 14px rgba(11,31,58,.04)}
+.co-stat-num{font-size:46px;font-weight:900;color:var(--navy);letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums}
+.co-stat-num .plus{font-size:18px;color:var(--accent);vertical-align:top;margin-left:2px;font-weight:800}
+.co-stat-lbl{font-size:14px;font-weight:700;color:var(--navy);line-height:1.3}
+.co-stat-sub{font-size:12px;color:var(--ink-soft);margin-top:3px}
+
+/* What Makes Us Different — 6 tile grid */
+.diff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:1180px}
+.diff-card{background:#fff;border:1px solid var(--rule);border-left:3px solid var(--accent);border-radius:10px;padding:16px 18px;
+  display:flex;flex-direction:column;box-shadow:0 4px 12px rgba(11,31,58,.04)}
+.diff-card:nth-child(6){border-left-color:var(--hd)}
+.diff-num{font-size:12px;font-weight:800;color:var(--accent);letter-spacing:.16em;margin-bottom:8px;font-variant-numeric:tabular-nums}
+.diff-card:nth-child(6) .diff-num{color:var(--hd)}
+.diff-title{font-size:16px;font-weight:800;color:var(--navy);letter-spacing:-.01em;margin-bottom:6px}
+.diff-body{font-size:12.5px;color:var(--ink-soft);line-height:1.45}
+
+/* State of the Business — 3 columns */
+.state-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:1180px}
+.state-card{border-radius:12px;padding:18px 20px;background:#fff;border:1px solid var(--rule);
+  box-shadow:0 4px 14px rgba(11,31,58,.05)}
+.state-card.state-good{border-top:3px solid var(--good)}
+.state-card.state-warn{border-top:3px solid var(--warn)}
+.state-card.state-accent{border-top:3px solid var(--accent)}
+.state-title{font-size:14px;font-weight:800;color:var(--navy);text-transform:uppercase;letter-spacing:.12em;margin-bottom:12px}
+.state-card.state-good .state-title{color:var(--good)}
+.state-card.state-warn .state-title{color:var(--warn)}
+.state-card.state-accent .state-title{color:var(--accent)}
+.state-list{list-style:none;padding:0;margin:0}
+.state-list li{font-size:13.5px;color:var(--ink);line-height:1.5;padding:7px 0 7px 18px;position:relative;border-top:1px dashed var(--rule)}
+.state-list li:first-child{border-top:0;padding-top:2px}
+.state-list li::before{content:"";position:absolute;left:0;top:14px;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.state-card.state-good .state-list li::before{background:var(--good)}
+.state-card.state-warn .state-list li::before{background:var(--warn)}
+
+/* Future-state matrix table */
+.mtx-table{border:1px solid var(--rule);border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 6px 22px rgba(11,31,58,.05);max-width:1180px}
+.mtx-row{display:grid;grid-template-columns:1.05fr 1fr 1fr 1fr;border-top:1px solid var(--rule);font-size:13px;color:var(--ink);line-height:1.4}
+.mtx-row:first-child{border-top:0}
+.mtx-row > div{padding:11px 14px}
+.mtx-h{background:linear-gradient(180deg,var(--navy) 0%,var(--deep) 100%);color:#fff;font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:11px}
+.mtx-row:not(.mtx-h):nth-child(even){background:#f7faff}
+.mtx-area{font-weight:700;color:var(--navy)}
+.mtx-row > div:nth-child(3){background:rgba(0,166,224,.05)}
+.mtx-row.mtx-h > div:nth-child(3){background:transparent}
+.mtx-row > div:nth-child(4){background:rgba(249,99,2,.045)}
+.mtx-row.mtx-h > div:nth-child(4){background:transparent}
+
+/* Outlook timeline */
+.ot-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1180px}
+.ot-card{background:linear-gradient(180deg,#fff 0%,#f6faff 100%);border:1px solid var(--rule);border-radius:14px;padding:22px 22px;
+  box-shadow:0 6px 22px rgba(11,31,58,.05);position:relative;overflow:hidden}
+.ot-card:nth-child(1){border-top:4px solid var(--good)}
+.ot-card:nth-child(2){border-top:4px solid var(--accent)}
+.ot-card:nth-child(3){border-top:4px solid var(--hd)}
+.ot-label{font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--blue);margin-bottom:8px}
+.ot-card:nth-child(1) .ot-label{color:var(--good)}
+.ot-card:nth-child(3) .ot-label{color:var(--hd)}
+.ot-title{font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-.015em;margin-bottom:14px;line-height:1.15}
+.ot-list{list-style:none;padding:0;margin:0}
+.ot-list li{font-size:13.5px;color:var(--ink);line-height:1.5;padding:6px 0 6px 16px;position:relative}
+.ot-list li::before{content:"→";position:absolute;left:0;top:6px;color:var(--accent);font-weight:800}
+.ot-card:nth-child(1) .ot-list li::before{color:var(--good)}
+.ot-card:nth-child(3) .ot-list li::before{color:var(--hd)}
+
+/* Discussion */
+.dq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1180px}
+.dq-card{background:linear-gradient(180deg,#fff 0%,#f4f9fe 100%);border:1px solid var(--rule);border-radius:14px;padding:24px 22px;
+  box-shadow:0 6px 22px rgba(11,31,58,.05)}
+.dq-num{font-size:36px;font-weight:900;color:var(--accent);line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums;margin-bottom:10px}
+.dq-title{font-size:18px;font-weight:800;color:var(--navy);letter-spacing:-.01em;margin-bottom:10px}
+.dq-q{font-size:14px;color:var(--ink-soft);line-height:1.5}
+.dq-anchor{text-align:center;font-size:12px;color:var(--blue);letter-spacing:.16em;text-transform:uppercase;font-weight:700}
 </style>
 </head>
 <body>
@@ -266,10 +367,10 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
     <aside class="cover-rail">
       <div class="rail-top">
         <div class="rail-eyebrow">Est. 1998</div>
-        <div class="rail-anchor">Serving California<br>since 1998</div>
+        <div class="rail-anchor">San Diego, CA<br>Since 1998</div>
       </div>
       <div class="rail-bottom">
-        <div class="rail-tagline">The Service Matrix is the operating system behind every Select Source Water customer.</div>
+        <div class="rail-tagline">Where we are today, what makes our model work, and the road ahead for our shared customers.</div>
       </div>
     </aside>
     <main class="cover-main">
@@ -278,20 +379,20 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
         <div class="cobrand-rule"></div>
         <div class="hd-mark-cover" aria-label="Home Depot Authorized Independent Provider"></div>
       </div>
-      <div class="cover-kicker">Platform walkthrough · For leadership review</div>
-      <h1 class="cover-title">The <span class="cover-accent">Service Matrix</span>.</h1>
-      <p class="cover-sub">Lead. Water test. Sale. Install. Lifetime relationship. One platform.</p>
+      <div class="cover-kicker">Prepared for Home Depot Leadership</div>
+      <h1 class="cover-title">Home Depot<br><span class="cover-accent">Partnership Review</span>.</h1>
+      <p class="cover-sub">Select Source Water · The state of the business, what makes us different, and the road ahead.</p>
       <div class="cover-meta">
         <div class="cover-meta-item">
-          <span class="cover-meta-label">Presenter</span>
-          <span class="cover-meta-value">Andrae Thames</span>
-          <span class="cover-meta-sub">Director of Technology · Select Source Water</span>
+          <span class="cover-meta-label">Presented by</span>
+          <span class="cover-meta-value">Select Source Water</span>
+          <span class="cover-meta-sub">Jeff Ashbranner · Christian Crippen · Andrae Thames</span>
         </div>
         <div class="cover-meta-divider"></div>
         <div class="cover-meta-item">
           <span class="cover-meta-label">Provider</span>
           <span class="cover-meta-value">Authorized Independent Provider</span>
-          <span class="cover-meta-sub">Inside Home Depot</span>
+          <span class="cover-meta-sub">Inside Home Depot · San Diego, CA · Est. 1998</span>
         </div>
       </div>
     </main>
@@ -299,27 +400,8 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
   
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
-  <div class="sec">Open</div>
-  <div class="counter">1 / 58</div>
-</div>
-
-</div>
-
-<div class="slide opener" data-section="a">
-  <div class="slide-body">
-    <span class="brand-logo-watermark"></span>
-    <div>
-      <div class="section-num">Section A · Open</div>
-      <h2 class="section-title">Open.</h2>
-      <div class="deck-rule"></div>
-      <p class="lede">Why we're here. The problem we're solving.</p>
-    </div>
-  </div>
-  
-<div class="slide-footer">
-  <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
-  <div class="sec">Open</div>
-  <div class="counter">2 / 58</div>
+  <div class="sec">Partnership Review</div>
+  <div class="counter">1 / 63</div>
 </div>
 
 </div>
@@ -327,20 +409,17 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide" data-section="a">
   <div class="slide-body">
     <span class="brand-logo-watermark"></span>
-    <h3 class="kicker">Speaker · Director of Technology</h3>
-    <h2 class="slide-title">Why we're here.</h2>
+    <h3 class="kicker">What we'll cover today</h3>
+    <h2 class="slide-title">Agenda.</h2>
     <div class="deck-rule"></div>
-    <p class="lede" style="max-width:1100px">My job is to build the platform and the strategy that lets SSW scale without losing what makes us close — the human moment at the kitchen sink, in front of the homeowner.</p>
-    <div class="two-col" style="margin-top:22px">
-      <div class="card accent"><div class="label">The applied AI principle</div><h4>Improve the workflow. Improve the customer's quality of life. Keep the human connection sales requires.</h4><p>SSW does not replace the rep at the door. We arm the rep so the door opens warmer, and the conversation stays human.</p></div>
-      <div class="card alt"><div class="label">What this deck covers</div><h4>The Service Matrix end-to-end.</h4><ul class="bullets"><li>The lead-to-lifetime customer chassis</li><li>The four newly elevated modules: HD DSM · Multi-District · Payroll · Roles</li><li>What's live, what's beta, what's roadmap</li><li>What we're asking for next</li></ul></div>
-    </div>
+    <p class="lede" style="max-width:1100px">A direct walk-through — who we are, where the business is today, and where the next 24 months take us together.</p>
+    <div class="agenda-grid" style="margin-top:18px"><div class="agenda-row"><div class="agenda-num">01</div><div class="agenda-body"><div class="agenda-title">Introductions</div><div class="agenda-desc">Meet the Select Source Water leadership team.</div></div></div><div class="agenda-row"><div class="agenda-num">02</div><div class="agenda-body"><div class="agenda-title">Company Overview</div><div class="agenda-desc">Who we are, what we build, and how we're different.</div></div></div><div class="agenda-row"><div class="agenda-num">03</div><div class="agenda-body"><div class="agenda-title">State of the Business</div><div class="agenda-desc">A direct look at our Home Depot business today.</div></div></div><div class="agenda-row"><div class="agenda-num">04</div><div class="agenda-body"><div class="agenda-title">Future State</div><div class="agenda-desc">Service matrix and 1–2 year outlook.</div></div></div><div class="agenda-row"><div class="agenda-num">05</div><div class="agenda-body"><div class="agenda-title">Discussion & Next Steps</div><div class="agenda-desc">Open dialogue and alignment on priorities.</div></div></div></div>
   </div>
   
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
-  <div class="sec">Open</div>
-  <div class="counter">3 / 58</div>
+  <div class="sec">Partnership Review</div>
+  <div class="counter">2 / 63</div>
 </div>
 
 </div>
@@ -348,23 +427,138 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide" data-section="a">
   <div class="slide-body">
     <span class="brand-logo-watermark"></span>
-    <h3 class="kicker">The problem</h3>
-    <h2 class="slide-title">Most companies stitch four or five tools together.</h2>
+    <h3 class="kicker">Introductions</h3>
+    <h2 class="slide-title">The team behind Select Source Water.</h2>
     <div class="deck-rule"></div>
-    <p class="lede" style="max-width:1100px">Lead capture in one place. Field sales in another. Service in a third. Payroll bolted on. The customer feels every seam.</p>
-    <div class="four-col" style="margin-top:24px">
-      <div class="card"><div class="label">Tool 1</div><h4>CRM</h4><p>Lives in one place. Owns contact records.</p></div>
-      <div class="card"><div class="label">Tool 2</div><h4>Field sales</h4><p>Different tool. Different login. Notes don't sync.</p></div>
-      <div class="card"><div class="label">Tool 3</div><h4>Service mgmt</h4><p>Third tool. Limited scope. Wrapped with custom.</p></div>
-      <div class="card"><div class="label">Tool 4</div><h4>Payroll</h4><p>Spreadsheets. Manual reconciliation. Errors at scale.</p></div>
-    </div>
-    <div class="card hd" style="margin-top:18px"><div class="label">What the customer feels</div><h4>Every seam.</h4><p>The hand-off lag. The retyped name. The "we'll get back to you." The repeated questions across teams. The relationship dies between handoffs.</p></div>
+    <p class="lede" style="max-width:1100px">The three people accountable for what you'll see today — and for what we deliver every day.</p>
+    <div class="bio-grid" style="margin-top:22px"><div class="bio-card"><div class="bio-avatar">JA</div><div class="bio-name">Jeff Ashbranner</div><div class="bio-role">Owner / CEO</div><div class="bio-blurb">Sets the vision and strategy for Select Source Water and leads the company's growth and partnerships.</div></div><div class="bio-card"><div class="bio-avatar">CC</div><div class="bio-name">Christian Crippen</div><div class="bio-role">Director of Operations</div><div class="bio-blurb">Owns day-to-day operations: fleet, warehouse, install execution, and field performance.</div></div><div class="bio-card"><div class="bio-avatar">AT</div><div class="bio-name">Andrae Thames</div><div class="bio-role">Director of Technology</div><div class="bio-blurb">Drives the technology roadmap, the Service Matrix, and the digital tools that scale our installs.</div></div></div>
   </div>
   
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
-  <div class="sec">Open</div>
-  <div class="counter">4 / 58</div>
+  <div class="sec">Partnership Review</div>
+  <div class="counter">3 / 63</div>
+</div>
+
+</div>
+
+<div class="slide" data-section="a">
+  <div class="slide-body">
+    <span class="brand-logo-watermark"></span>
+    <h3 class="kicker">Company Overview</h3>
+    <h2 class="slide-title">Who we are.</h2>
+    <div class="deck-rule"></div>
+    <p class="lede" style="max-width:1100px">Southern California-based whole-home water filtration & softening solutions. Founded 1998. Built and installed in the USA.</p>
+    <div class="co-grid" style="margin-top:18px">
+      <div class="co-block">
+        <div class="co-eyebrow">Our Mission</div>
+        <div class="co-statement">To redefine what it means to have clean, healthy water in every home — through products we build, install, and stand behind.</div>
+        <div class="co-eyebrow" style="margin-top:18px">Our Values</div>
+        <div class="co-values">Empathy · Accountability · Integrity</div>
+      </div>
+      <div class="co-stats">
+        <div class="co-stat"><div class="co-stat-num">25<span class="plus">+</span></div><div class="co-stat-lbl">Years in the water solutions industry</div><div class="co-stat-sub">Founded 1998</div></div>
+        <div class="co-stat"><div class="co-stat-num">24<span class="plus">hrs</span></div><div class="co-stat-lbl">Same- or next-day install standard</div><div class="co-stat-sub">From sale to running water</div></div>
+        <div class="co-stat"><div class="co-stat-num">100<span class="plus">%</span></div><div class="co-stat-lbl">Designed and built in the USA</div><div class="co-stat-sub">Quality we can stand behind</div></div>
+      </div>
+    </div>
+  </div>
+  
+<div class="slide-footer">
+  <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
+  <div class="sec">Partnership Review</div>
+  <div class="counter">4 / 63</div>
+</div>
+
+</div>
+
+<div class="slide" data-section="a">
+  <div class="slide-body">
+    <span class="brand-logo-watermark"></span>
+    <h3 class="kicker">Six things you won't find together anywhere else</h3>
+    <h2 class="slide-title">What makes us different.</h2>
+    <div class="deck-rule"></div>
+    <p class="lede" style="max-width:1100px">Made in the USA · consultative sales · built on-site · 24-hour install · technology-driven · committed to Home Depot.</p>
+    <div class="diff-grid" style="margin-top:14px"><div class="diff-card"><div class="diff-num">01</div><div class="diff-title">Made in the USA</div><div class="diff-body">Every system is engineered and manufactured domestically — quality we can stand behind.</div></div><div class="diff-card"><div class="diff-num">02</div><div class="diff-title">Consultative Sales</div><div class="diff-body">Education-first, no-pressure selling. We solve the customer's water problem, not push a SKU.</div></div><div class="diff-card"><div class="diff-num">03</div><div class="diff-title">Built On-Site</div><div class="diff-body">Units are assembled at the customer's home — sized to their water, plumbing, and household.</div></div><div class="diff-card"><div class="diff-num">04</div><div class="diff-title">24-Hour Install</div><div class="diff-body">Most homes are sold, built, and running clean water within 24 hours.</div></div><div class="diff-card"><div class="diff-num">05</div><div class="diff-title">Technology Driven</div><div class="diff-body">In-home water testing, digital install workflows, and a Service Matrix that scales with us.</div></div><div class="diff-card"><div class="diff-num">06</div><div class="diff-title">Committed to Home Depot</div><div class="diff-body">Home Depot is a strategic partner — we invest people, process, and product into this channel.</div></div></div>
+  </div>
+  
+<div class="slide-footer">
+  <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
+  <div class="sec">Partnership Review</div>
+  <div class="counter">5 / 63</div>
+</div>
+
+</div>
+
+<div class="slide" data-section="a">
+  <div class="slide-body">
+    <span class="brand-logo-watermark"></span><span class="hd-corner" title="Authorized Independent Provider"></span>
+    <h3 class="kicker">State of the Business</h3>
+    <h2 class="slide-title">A direct look at our Home Depot business.</h2>
+    <div class="deck-rule"></div>
+    <p class="lede" style="max-width:1100px">We want to lead this conversation. Here's where the business is today, what's working, and where we're investing to grow with Home Depot.</p>
+    <div class="state-grid" style="margin-top:18px"><div class="state-card state-good"><div class="state-title">What's Working</div><ul class="state-list"><li>Strong close rates from in-home water tests</li><li>Same-/next-day installs driving customer satisfaction</li><li>Repeat referrals from HD-sourced households</li><li>Tight install crews and dialed-in routing</li></ul></div><div class="state-card state-warn"><div class="state-title">Where We're Focused</div><ul class="state-list"><li>Lead-to-install conversion consistency</li><li>Schedule density in target ZIP codes</li><li>Standardizing the in-home presentation</li><li>Capturing every test as a tracked opportunity</li></ul></div><div class="state-card state-accent"><div class="state-title">Our Response</div><ul class="state-list"><li>Rolling out the new Service Matrix (next section)</li><li>Investing in fleet, warehouse, and install capacity</li><li>Tightening reporting cadence with Home Depot</li><li>Hiring and training to protect install quality at scale</li></ul></div></div>
+  </div>
+  
+<div class="slide-footer">
+  <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
+  <div class="sec">Partnership Review</div>
+  <div class="counter">6 / 63</div>
+</div>
+
+</div>
+
+<div class="slide" data-section="a">
+  <div class="slide-body">
+    <span class="brand-logo-watermark"></span>
+    <h3 class="kicker">Future State</h3>
+    <h2 class="slide-title">Service matrix — today, 12 months, 24 months.</h2>
+    <div class="deck-rule"></div>
+    <p class="lede" style="max-width:1100px">Where every part of the operation sits today, where it lands in 12 months, and what it looks like in 24 months. This sets up the deeper walkthrough that follows.</p>
+    <div class="mtx-table" style="margin-top:16px"><div class="mtx-row mtx-h"><div>Service Area</div><div>Today</div><div>12 Months</div><div>24 Months</div></div><div class="mtx-row"><div class="mtx-area">In-Home Water Test</div><div>Manual capture, paper + tablet</div><div>Standardized digital test workflow</div><div>Test data feeding install + service routing</div></div><div class="mtx-row"><div class="mtx-area">Sales Presentation</div><div>Consultative, rep-led</div><div>Standardized no-pressure playbook</div><div>Coached & scored across every rep</div></div><div class="mtx-row"><div class="mtx-area">On-Site Build & Install</div><div>Built on-site, 24-hr install</div><div>Standardized install kits & checklists</div><div>Certified crews + capacity by region</div></div><div class="mtx-row"><div class="mtx-area">Fleet & Warehouse</div><div>Active fleet, manual inventory</div><div>Documented procedures, par levels</div><div>Multi-location warehouse footprint</div></div><div class="mtx-row"><div class="mtx-area">Service & Warranty</div><div>Reactive service calls</div><div>Scheduled maintenance program</div><div>Lifecycle service plans for HD customers</div></div><div class="mtx-row"><div class="mtx-area">Home Depot Reporting</div><div>Periodic check-ins</div><div>Monthly KPI scorecard</div><div>Live dashboard shared with HD partners</div></div></div>
+  </div>
+  
+<div class="slide-footer">
+  <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
+  <div class="sec">Partnership Review</div>
+  <div class="counter">7 / 63</div>
+</div>
+
+</div>
+
+<div class="slide" data-section="a">
+  <div class="slide-body">
+    <span class="brand-logo-watermark"></span>
+    <h3 class="kicker">Outlook</h3>
+    <h2 class="slide-title">The 1–2 year outlook.</h2>
+    <div class="deck-rule"></div>
+    <p class="lede" style="max-width:1100px">Three windows: stabilize what works, scale what's proven, become the standard.</p>
+    <div class="ot-grid" style="margin-top:20px"><div class="ot-card"><div class="ot-label">NOW</div><div class="ot-title">Stabilize & Standardize</div><ul class="ot-list"><li>Document every operational procedure end-to-end</li><li>Tighten install quality and customer handoff</li><li>Lock in reporting cadence with Home Depot</li></ul></div><div class="ot-card"><div class="ot-label">12 MONTHS</div><div class="ot-title">Scale the Model</div><ul class="ot-list"><li>Roll out the full Service Matrix across the team</li><li>Grow trained install crews and fleet capacity</li><li>Expand digital tools: testing, scheduling, service</li></ul></div><div class="ot-card"><div class="ot-label">24 MONTHS</div><div class="ot-title">Become the Standard</div><ul class="ot-list"><li>The reference water partner for HD in our markets</li><li>Multi-region footprint with consistent customer experience</li><li>Recurring service revenue layered onto every install</li></ul></div></div>
+  </div>
+  
+<div class="slide-footer">
+  <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
+  <div class="sec">Partnership Review</div>
+  <div class="counter">8 / 63</div>
+</div>
+
+</div>
+
+<div class="slide" data-section="a">
+  <div class="slide-body">
+    <span class="brand-logo-watermark"></span>
+    <h3 class="kicker">Discussion</h3>
+    <h2 class="slide-title">Where would you like to take this next?</h2>
+    <div class="deck-rule"></div>
+    <p class="lede" style="max-width:1100px">Three open questions for Home Depot leadership — your input shapes how the next 90 days look.</p>
+    <div class="dq-grid" style="margin-top:22px"><div class="dq-card"><div class="dq-num">01</div><div class="dq-title">Customer Experience</div><div class="dq-q">Anything you're hearing from Home Depot customers we should act on first?</div></div><div class="dq-card"><div class="dq-num">02</div><div class="dq-title">Volume & Capacity</div><div class="dq-q">What growth runway should we be planning against in the next 12 months?</div></div><div class="dq-card"><div class="dq-num">03</div><div class="dq-title">Partnership Cadence</div><div class="dq-q">How often should we be sitting down like this — and with whom?</div></div></div>
+    <div class="dq-anchor" style="margin-top:22px">Thank you — Select Source Water · San Diego, CA · Est. 1998</div>
+  </div>
+  
+<div class="slide-footer">
+  <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
+  <div class="sec">Partnership Review</div>
+  <div class="counter">9 / 63</div>
 </div>
 
 </div>
@@ -383,7 +577,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">The Vision</div>
-  <div class="counter">5 / 58</div>
+  <div class="counter">10 / 63</div>
 </div>
 
 </div>
@@ -423,7 +617,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">The Vision</div>
-  <div class="counter">6 / 58</div>
+  <div class="counter">11 / 63</div>
 </div>
 
 </div>
@@ -441,7 +635,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">The Vision</div>
-  <div class="counter">7 / 58</div>
+  <div class="counter">12 / 63</div>
 </div>
 
 </div>
@@ -460,7 +654,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">The Lead-to-Customer Journey</div>
-  <div class="counter">8 / 58</div>
+  <div class="counter">13 / 63</div>
 </div>
 
 </div>
@@ -489,7 +683,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">The Lead-to-Customer Journey</div>
-  <div class="counter">9 / 58</div>
+  <div class="counter">14 / 63</div>
 </div>
 
 </div>
@@ -516,7 +710,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">The Lead-to-Customer Journey</div>
-  <div class="counter">10 / 58</div>
+  <div class="counter">15 / 63</div>
 </div>
 
 </div>
@@ -537,7 +731,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">The Lead-to-Customer Journey</div>
-  <div class="counter">11 / 58</div>
+  <div class="counter">16 / 63</div>
 </div>
 
 </div>
@@ -558,7 +752,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">The Lead-to-Customer Journey</div>
-  <div class="counter">12 / 58</div>
+  <div class="counter">17 / 63</div>
 </div>
 
 </div>
@@ -579,7 +773,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">The Lead-to-Customer Journey</div>
-  <div class="counter">13 / 58</div>
+  <div class="counter">18 / 63</div>
 </div>
 
 </div>
@@ -597,7 +791,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">The Lead-to-Customer Journey</div>
-  <div class="counter">14 / 58</div>
+  <div class="counter">19 / 63</div>
 </div>
 
 </div>
@@ -618,7 +812,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">The Lead-to-Customer Journey</div>
-  <div class="counter">15 / 58</div>
+  <div class="counter">20 / 63</div>
 </div>
 
 </div>
@@ -640,7 +834,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">The Lead-to-Customer Journey</div>
-  <div class="counter">16 / 58</div>
+  <div class="counter">21 / 63</div>
 </div>
 
 </div>
@@ -662,7 +856,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">The Lead-to-Customer Journey</div>
-  <div class="counter">17 / 58</div>
+  <div class="counter">22 / 63</div>
 </div>
 
 </div>
@@ -681,7 +875,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">The Lifetime Relationship</div>
-  <div class="counter">18 / 58</div>
+  <div class="counter">23 / 63</div>
 </div>
 
 </div>
@@ -705,7 +899,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">The Lifetime Relationship</div>
-  <div class="counter">19 / 58</div>
+  <div class="counter">24 / 63</div>
 </div>
 
 </div>
@@ -726,7 +920,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">The Lifetime Relationship</div>
-  <div class="counter">20 / 58</div>
+  <div class="counter">25 / 63</div>
 </div>
 
 </div>
@@ -744,7 +938,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">The Lifetime Relationship</div>
-  <div class="counter">21 / 58</div>
+  <div class="counter">26 / 63</div>
 </div>
 
 </div>
@@ -780,7 +974,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">The Lifetime Relationship</div>
-  <div class="counter">22 / 58</div>
+  <div class="counter">27 / 63</div>
 </div>
 
 </div>
@@ -801,7 +995,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">The Lifetime Relationship</div>
-  <div class="counter">23 / 58</div>
+  <div class="counter">28 / 63</div>
 </div>
 
 </div>
@@ -819,7 +1013,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">The Lifetime Relationship</div>
-  <div class="counter">24 / 58</div>
+  <div class="counter">29 / 63</div>
 </div>
 
 </div>
@@ -838,7 +1032,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">The Lifetime Relationship</div>
-  <div class="counter">25 / 58</div>
+  <div class="counter">30 / 63</div>
 </div>
 
 </div>
@@ -857,7 +1051,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">Home Depot Two-Way Relationship</div>
-  <div class="counter">26 / 58</div>
+  <div class="counter">31 / 63</div>
 </div>
 
 </div>
@@ -878,7 +1072,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">Home Depot Two-Way Relationship</div>
-  <div class="counter">27 / 58</div>
+  <div class="counter">32 / 63</div>
 </div>
 
 </div>
@@ -896,7 +1090,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">Home Depot Two-Way Relationship</div>
-  <div class="counter">28 / 58</div>
+  <div class="counter">33 / 63</div>
 </div>
 
 </div>
@@ -914,7 +1108,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">Home Depot Two-Way Relationship</div>
-  <div class="counter">29 / 58</div>
+  <div class="counter">34 / 63</div>
 </div>
 
 </div>
@@ -933,7 +1127,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">Home Depot Two-Way Relationship</div>
-  <div class="counter">30 / 58</div>
+  <div class="counter">35 / 63</div>
 </div>
 
 </div>
@@ -952,7 +1146,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">Multi-District & Multi-Team</div>
-  <div class="counter">31 / 58</div>
+  <div class="counter">36 / 63</div>
 </div>
 
 </div>
@@ -975,7 +1169,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">Multi-District & Multi-Team</div>
-  <div class="counter">32 / 58</div>
+  <div class="counter">37 / 63</div>
 </div>
 
 </div>
@@ -996,7 +1190,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">Multi-District & Multi-Team</div>
-  <div class="counter">33 / 58</div>
+  <div class="counter">38 / 63</div>
 </div>
 
 </div>
@@ -1014,7 +1208,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">Multi-District & Multi-Team</div>
-  <div class="counter">34 / 58</div>
+  <div class="counter">39 / 63</div>
 </div>
 
 </div>
@@ -1033,7 +1227,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">Role Architecture & Accountability</div>
-  <div class="counter">35 / 58</div>
+  <div class="counter">40 / 63</div>
 </div>
 
 </div>
@@ -1061,7 +1255,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">Role Architecture & Accountability</div>
-  <div class="counter">36 / 58</div>
+  <div class="counter">41 / 63</div>
 </div>
 
 </div>
@@ -1088,7 +1282,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">Role Architecture & Accountability</div>
-  <div class="counter">37 / 58</div>
+  <div class="counter">42 / 63</div>
 </div>
 
 </div>
@@ -1115,7 +1309,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">Role Architecture & Accountability</div>
-  <div class="counter">38 / 58</div>
+  <div class="counter">43 / 63</div>
 </div>
 
 </div>
@@ -1134,7 +1328,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">Field Sales Tools</div>
-  <div class="counter">39 / 58</div>
+  <div class="counter">44 / 63</div>
 </div>
 
 </div>
@@ -1155,7 +1349,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">Field Sales Tools</div>
-  <div class="counter">40 / 58</div>
+  <div class="counter">45 / 63</div>
 </div>
 
 </div>
@@ -1176,7 +1370,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">Field Sales Tools</div>
-  <div class="counter">41 / 58</div>
+  <div class="counter">46 / 63</div>
 </div>
 
 </div>
@@ -1205,7 +1399,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">The Executive Layer</div>
-  <div class="counter">42 / 58</div>
+  <div class="counter">47 / 63</div>
 </div>
 
 </div>
@@ -1234,7 +1428,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">The Executive Layer</div>
-  <div class="counter">43 / 58</div>
+  <div class="counter">48 / 63</div>
 </div>
 
 </div>
@@ -1263,7 +1457,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">The Executive Layer</div>
-  <div class="counter">44 / 58</div>
+  <div class="counter">49 / 63</div>
 </div>
 
 </div>
@@ -1282,7 +1476,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">Industry Flexibility</div>
-  <div class="counter">45 / 58</div>
+  <div class="counter">50 / 63</div>
 </div>
 
 </div>
@@ -1301,7 +1495,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">Industry Flexibility</div>
-  <div class="counter">46 / 58</div>
+  <div class="counter">51 / 63</div>
 </div>
 
 </div>
@@ -1319,7 +1513,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">Why This Matters for Home Depot</div>
-  <div class="counter">47 / 58</div>
+  <div class="counter">52 / 63</div>
 </div>
 
 </div>
@@ -1337,7 +1531,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">Why This Matters for Home Depot</div>
-  <div class="counter">48 / 58</div>
+  <div class="counter">53 / 63</div>
 </div>
 
 </div>
@@ -1360,7 +1554,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">Why This Matters for Home Depot</div>
-  <div class="counter">49 / 58</div>
+  <div class="counter">54 / 63</div>
 </div>
 
 </div>
@@ -1379,7 +1573,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">Close</div>
-  <div class="counter">50 / 58</div>
+  <div class="counter">55 / 63</div>
 </div>
 
 </div>
@@ -1400,7 +1594,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">Close</div>
-  <div class="counter">51 / 58</div>
+  <div class="counter">56 / 63</div>
 </div>
 
 </div>
@@ -1422,7 +1616,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">Close</div>
-  <div class="counter">52 / 58</div>
+  <div class="counter">57 / 63</div>
 </div>
 
 </div>
@@ -1450,7 +1644,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">Close</div>
-  <div class="counter">53 / 58</div>
+  <div class="counter">58 / 63</div>
 </div>
 
 </div>
@@ -1469,7 +1663,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">Appendix</div>
-  <div class="counter">54 / 58</div>
+  <div class="counter">59 / 63</div>
 </div>
 
 </div>
@@ -1481,13 +1675,13 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
     <h2 class="slide-title">Section navigation — jump anywhere.</h2>
     <div class="deck-rule"></div>
     <p class="lede">Press M at any time to open the full section grid. Use ← → to step. Press F for full screen.</p>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px;flex:1"><div class='card alt' style='cursor:pointer' onclick="goto(0)"><div class='label'>01</div><h4>Open</h4><p style='margin-top:4px'>4 slides</p></div><div class='card alt' style='cursor:pointer' onclick="goto(4)"><div class='label'>02</div><h4>The Vision</h4><p style='margin-top:4px'>3 slides</p></div><div class='card alt' style='cursor:pointer' onclick="goto(7)"><div class='label'>03</div><h4>The Lead-to-Customer Journey</h4><p style='margin-top:4px'>10 slides</p></div><div class='card alt' style='cursor:pointer' onclick="goto(17)"><div class='label'>04</div><h4>The Lifetime Relationship</h4><p style='margin-top:4px'>8 slides</p></div><div class='card alt' style='cursor:pointer' onclick="goto(25)"><div class='label'>05</div><h4>Home Depot Two-Way Relationship</h4><p style='margin-top:4px'>5 slides</p></div><div class='card alt' style='cursor:pointer' onclick="goto(30)"><div class='label'>06</div><h4>Multi-District & Multi-Team</h4><p style='margin-top:4px'>4 slides</p></div><div class='card alt' style='cursor:pointer' onclick="goto(34)"><div class='label'>07</div><h4>Role Architecture & Accountability</h4><p style='margin-top:4px'>4 slides</p></div><div class='card alt' style='cursor:pointer' onclick="goto(38)"><div class='label'>08</div><h4>Field Sales Tools</h4><p style='margin-top:4px'>3 slides</p></div><div class='card alt' style='cursor:pointer' onclick="goto(41)"><div class='label'>09</div><h4>The Executive Layer</h4><p style='margin-top:4px'>3 slides</p></div><div class='card alt' style='cursor:pointer' onclick="goto(44)"><div class='label'>10</div><h4>Industry Flexibility</h4><p style='margin-top:4px'>2 slides</p></div><div class='card alt' style='cursor:pointer' onclick="goto(46)"><div class='label'>11</div><h4>Why This Matters for Home Depot</h4><p style='margin-top:4px'>3 slides</p></div><div class='card alt' style='cursor:pointer' onclick="goto(49)"><div class='label'>12</div><h4>Close</h4><p style='margin-top:4px'>4 slides</p></div><div class='card alt' style='cursor:pointer' onclick="goto(53)"><div class='label'>13</div><h4>Appendix</h4><p style='margin-top:4px'>5 slides</p></div></div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px;flex:1"><div class='card alt' style='cursor:pointer' onclick="goto(0)"><div class='label'>01</div><h4>Partnership Review</h4><p style='margin-top:4px'>9 slides</p></div><div class='card alt' style='cursor:pointer' onclick="goto(9)"><div class='label'>02</div><h4>The Vision</h4><p style='margin-top:4px'>3 slides</p></div><div class='card alt' style='cursor:pointer' onclick="goto(12)"><div class='label'>03</div><h4>The Lead-to-Customer Journey</h4><p style='margin-top:4px'>10 slides</p></div><div class='card alt' style='cursor:pointer' onclick="goto(22)"><div class='label'>04</div><h4>The Lifetime Relationship</h4><p style='margin-top:4px'>8 slides</p></div><div class='card alt' style='cursor:pointer' onclick="goto(30)"><div class='label'>05</div><h4>Home Depot Two-Way Relationship</h4><p style='margin-top:4px'>5 slides</p></div><div class='card alt' style='cursor:pointer' onclick="goto(35)"><div class='label'>06</div><h4>Multi-District & Multi-Team</h4><p style='margin-top:4px'>4 slides</p></div><div class='card alt' style='cursor:pointer' onclick="goto(39)"><div class='label'>07</div><h4>Role Architecture & Accountability</h4><p style='margin-top:4px'>4 slides</p></div><div class='card alt' style='cursor:pointer' onclick="goto(43)"><div class='label'>08</div><h4>Field Sales Tools</h4><p style='margin-top:4px'>3 slides</p></div><div class='card alt' style='cursor:pointer' onclick="goto(46)"><div class='label'>09</div><h4>The Executive Layer</h4><p style='margin-top:4px'>3 slides</p></div><div class='card alt' style='cursor:pointer' onclick="goto(49)"><div class='label'>10</div><h4>Industry Flexibility</h4><p style='margin-top:4px'>2 slides</p></div><div class='card alt' style='cursor:pointer' onclick="goto(51)"><div class='label'>11</div><h4>Why This Matters for Home Depot</h4><p style='margin-top:4px'>3 slides</p></div><div class='card alt' style='cursor:pointer' onclick="goto(54)"><div class='label'>12</div><h4>Close</h4><p style='margin-top:4px'>4 slides</p></div><div class='card alt' style='cursor:pointer' onclick="goto(58)"><div class='label'>13</div><h4>Appendix</h4><p style='margin-top:4px'>5 slides</p></div></div>
   </div>
   
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">Appendix</div>
-  <div class="counter">55 / 58</div>
+  <div class="counter">60 / 63</div>
 </div>
 
 </div>
@@ -1507,7 +1701,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">Appendix</div>
-  <div class="counter">56 / 58</div>
+  <div class="counter">61 / 63</div>
 </div>
 
 </div>
@@ -1540,7 +1734,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">Appendix</div>
-  <div class="counter">57 / 58</div>
+  <div class="counter">62 / 63</div>
 </div>
 
 </div>
@@ -1558,7 +1752,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
 <div class="slide-footer">
   <div class="brand-wrap"><span class="brand-logo-footer"></span><span class="brand">SSW · SERVICE MATRIX</span></div>
   <div class="sec">Appendix</div>
-  <div class="counter">58 / 58</div>
+  <div class="counter">63 / 63</div>
 </div>
 
 </div>
@@ -1568,7 +1762,7 @@ h3.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:var(
   <button class="nav-close" onclick="closeNav()">Close · Esc</button>
   <div class="nav-shell">
     <h3>Jump to section or slide</h3>
-    <div id="navGrid"><div class='ng sec' onclick='goto(0)'>01 · Open</div><div class='ng sec' onclick='goto(4)'>02 · The Vision</div><div class='ng sec' onclick='goto(7)'>03 · The Lead-to-Customer Journey</div><div class='ng sec' onclick='goto(17)'>04 · The Lifetime Relationship</div><div class='ng sec' onclick='goto(25)'>05 · Home Depot Two-Way Relationship</div><div class='ng sec' onclick='goto(30)'>06 · Multi-District & Multi-Team</div><div class='ng sec' onclick='goto(34)'>07 · Role Architecture & Accountability</div><div class='ng sec' onclick='goto(38)'>08 · Field Sales Tools</div><div class='ng sec' onclick='goto(41)'>09 · The Executive Layer</div><div class='ng sec' onclick='goto(44)'>10 · Industry Flexibility</div><div class='ng sec' onclick='goto(46)'>11 · Why This Matters for Home Depot</div><div class='ng sec' onclick='goto(49)'>12 · Close</div><div class='ng sec' onclick='goto(53)'>13 · Appendix</div><div class='ng' onclick='goto(0)'><span class='num'>1.</span>Cover</div><div class='ng' onclick='goto(1)'><span class='num'>2.</span>Open (opener)</div><div class='ng' onclick='goto(2)'><span class='num'>3.</span>Why we&apos;re here.</div><div class='ng' onclick='goto(3)'><span class='num'>4.</span>Most companies stitch four or five tools together.</div><div class='ng' onclick='goto(4)'><span class='num'>5.</span>The Vision (opener)</div><div class='ng' onclick='goto(5)'><span class='num'>6.</span>The Service Matrix — one chassis.</div><div class='ng' onclick='goto(6)'><span class='num'>7.</span>What changes for each person.</div><div class='ng' onclick='goto(7)'><span class='num'>8.</span>The Lead-to-Customer Journey (opener)</div><div class='ng' onclick='goto(8)'><span class='num'>9.</span>Lead enters — every source funnels in.</div><div class='ng' onclick='goto(9)'><span class='num'>10.</span>Lead routing & assignment.</div><div class='ng' onclick='goto(10)'><span class='num'>11.</span>AI Qualification — the first 60 seconds.</div><div class='ng' onclick='goto(11)'><span class='num'>12.</span>Water-Tester App — the in-home moment.</div><div class='ng' onclick='goto(12)'><span class='num'>13.</span>Proposal generation — the Wizard.</div><div class='ng' onclick='goto(13)'><span class='num'>14.</span>Financing inside the proposal — one tap.</div><div class='ng' onclick='goto(14)'><span class='num'>15.</span>Sale closes → installer assigned.</div><div class='ng' onclick='goto(15)'><span class='num'>16.</span>Installer App — step-gated workflow.</div><div class='ng' onclick='goto(16)'><span class='num'>17.</span>Install completes → Customer Portal unlocked.</div><div class='ng' onclick='goto(17)'><span class='num'>18.</span>The Lifetime Relationship (opener)</div><div class='ng' onclick='goto(18)'><span class='num'>19.</span>Portal home — at-a-glance every time.</div><div class='ng' onclick='goto(19)'><span class='num'>20.</span>My System — every detail of what they bought.</div><div class='ng' onclick='goto(20)'><span class='num'>21.</span>Maintenance & Auto-Refills.</div><div class='ng' onclick='goto(21)'><span class='num'>22.</span>Re-order → Home Depot. One tap.</div><div class='ng' onclick='goto(22)'><span class='num'>23.</span>Service & troubleshooting — AI triages first.</div><div class='ng' onclick='goto(23)'><span class='num'>24.</span>Referrals — one tap. Same AI flow.</div><div class='ng' onclick='goto(24)'><span class='num'>25.</span>Section opener</div><div class='ng' onclick='goto(25)'><span class='num'>26.</span>Home Depot Two-Way Relationship (opener)</div><div class='ng' onclick='goto(26)'><span class='num'>27.</span>The HD DSM Portal — overview.</div><div class='ng' onclick='goto(27)'><span class='num'>28.</span>What the DSM sees.</div><div class='ng' onclick='goto(28)'><span class='num'>29.</span>What flows back to Home Depot.</div><div class='ng' onclick='goto(29)'><span class='num'>30.</span>Section opener</div><div class='ng' onclick='goto(30)'><span class='num'>31.</span>Multi-District & Multi-Team (opener)</div><div class='ng' onclick='goto(31)'><span class='num'>32.</span>One platform, many territories.</div><div class='ng' onclick='goto(32)'><span class='num'>33.</span>Stats stay in their lane.</div><div class='ng' onclick='goto(33)'><span class='num'>34.</span>One brand. One customer experience.</div><div class='ng' onclick='goto(34)'><span class='num'>35.</span>Role Architecture & Accountability (opener)</div><div class='ng' onclick='goto(35)'><span class='num'>36.</span>Work routes by event.</div><div class='ng' onclick='goto(36)'><span class='num'>37.</span>Role-based accounts — every role, every level.</div><div class='ng' onclick='goto(37)'><span class='num'>38.</span>HR & Admin — baked in.</div><div class='ng' onclick='goto(38)'><span class='num'>39.</span>Field Sales Tools (opener)</div><div class='ng' onclick='goto(39)'><span class='num'>40.</span>Tools for D2D.</div><div class='ng' onclick='goto(40)'><span class='num'>41.</span>Tools inside Home Depot.</div><div class='ng' onclick='goto(41)'><span class='num'>42.</span>Executive Dashboard / KPIs.</div><div class='ng' onclick='goto(42)'><span class='num'>43.</span>Role impersonation — View As.</div><div class='ng' onclick='goto(43)'><span class='num'>44.</span>Finance & operating brief.</div><div class='ng' onclick='goto(44)'><span class='num'>45.</span>Industry Flexibility (opener)</div><div class='ng' onclick='goto(45)'><span class='num'>46.</span>One chassis, eight verticals.</div><div class='ng' onclick='goto(46)'><span class='num'>47.</span>How our software helps Home Depot.</div><div class='ng' onclick='goto(47)'><span class='num'>48.</span>Same experience. Every category.</div><div class='ng' onclick='goto(48)'><span class='num'>49.</span>What the roadmap looks like.</div><div class='ng' onclick='goto(49)'><span class='num'>50.</span>Close (opener)</div><div class='ng' onclick='goto(50)'><span class='num'>51.</span>What we&apos;d love your input on.</div><div class='ng' onclick='goto(51)'><span class='num'>52.</span>The one line.</div><div class='ng' onclick='goto(52)'><span class='num'>53.</span>Close</div><div class='ng' onclick='goto(53)'><span class='num'>54.</span>Appendix (opener)</div><div class='ng' onclick='goto(54)'><span class='num'>55.</span>Section navigation — jump anywhere.</div><div class='ng' onclick='goto(55)'><span class='num'>56.</span>Vertical adaptations — at a glance.</div><div class='ng' onclick='goto(56)'><span class='num'>57.</span>Build status — beta-honest.</div><div class='ng' onclick='goto(57)'><span class='num'>58.</span>Module reference.</div></div>
+    <div id="navGrid"><div class='ng sec' onclick='goto(0)'>01 · Partnership Review</div><div class='ng sec' onclick='goto(9)'>02 · The Vision</div><div class='ng sec' onclick='goto(12)'>03 · The Lead-to-Customer Journey</div><div class='ng sec' onclick='goto(22)'>04 · The Lifetime Relationship</div><div class='ng sec' onclick='goto(30)'>05 · Home Depot Two-Way Relationship</div><div class='ng sec' onclick='goto(35)'>06 · Multi-District & Multi-Team</div><div class='ng sec' onclick='goto(39)'>07 · Role Architecture & Accountability</div><div class='ng sec' onclick='goto(43)'>08 · Field Sales Tools</div><div class='ng sec' onclick='goto(46)'>09 · The Executive Layer</div><div class='ng sec' onclick='goto(49)'>10 · Industry Flexibility</div><div class='ng sec' onclick='goto(51)'>11 · Why This Matters for Home Depot</div><div class='ng sec' onclick='goto(54)'>12 · Close</div><div class='ng sec' onclick='goto(58)'>13 · Appendix</div><div class='ng' onclick='goto(0)'><span class='num'>1.</span>Cover</div><div class='ng' onclick='goto(1)'><span class='num'>2.</span>Agenda.</div><div class='ng' onclick='goto(2)'><span class='num'>3.</span>The team behind Select Source Water.</div><div class='ng' onclick='goto(3)'><span class='num'>4.</span>Who we are.</div><div class='ng' onclick='goto(4)'><span class='num'>5.</span>What makes us different.</div><div class='ng' onclick='goto(5)'><span class='num'>6.</span>A direct look at our Home Depot business.</div><div class='ng' onclick='goto(6)'><span class='num'>7.</span>Service matrix — today, 12 months, 24 months.</div><div class='ng' onclick='goto(7)'><span class='num'>8.</span>The 1–2 year outlook.</div><div class='ng' onclick='goto(8)'><span class='num'>9.</span>Where would you like to take this next?</div><div class='ng' onclick='goto(9)'><span class='num'>10.</span>The Vision (opener)</div><div class='ng' onclick='goto(10)'><span class='num'>11.</span>The Service Matrix — one chassis.</div><div class='ng' onclick='goto(11)'><span class='num'>12.</span>What changes for each person.</div><div class='ng' onclick='goto(12)'><span class='num'>13.</span>The Lead-to-Customer Journey (opener)</div><div class='ng' onclick='goto(13)'><span class='num'>14.</span>Lead enters — every source funnels in.</div><div class='ng' onclick='goto(14)'><span class='num'>15.</span>Lead routing & assignment.</div><div class='ng' onclick='goto(15)'><span class='num'>16.</span>AI Qualification — the first 60 seconds.</div><div class='ng' onclick='goto(16)'><span class='num'>17.</span>Water-Tester App — the in-home moment.</div><div class='ng' onclick='goto(17)'><span class='num'>18.</span>Proposal generation — the Wizard.</div><div class='ng' onclick='goto(18)'><span class='num'>19.</span>Financing inside the proposal — one tap.</div><div class='ng' onclick='goto(19)'><span class='num'>20.</span>Sale closes → installer assigned.</div><div class='ng' onclick='goto(20)'><span class='num'>21.</span>Installer App — step-gated workflow.</div><div class='ng' onclick='goto(21)'><span class='num'>22.</span>Install completes → Customer Portal unlocked.</div><div class='ng' onclick='goto(22)'><span class='num'>23.</span>The Lifetime Relationship (opener)</div><div class='ng' onclick='goto(23)'><span class='num'>24.</span>Portal home — at-a-glance every time.</div><div class='ng' onclick='goto(24)'><span class='num'>25.</span>My System — every detail of what they bought.</div><div class='ng' onclick='goto(25)'><span class='num'>26.</span>Maintenance & Auto-Refills.</div><div class='ng' onclick='goto(26)'><span class='num'>27.</span>Re-order → Home Depot. One tap.</div><div class='ng' onclick='goto(27)'><span class='num'>28.</span>Service & troubleshooting — AI triages first.</div><div class='ng' onclick='goto(28)'><span class='num'>29.</span>Referrals — one tap. Same AI flow.</div><div class='ng' onclick='goto(29)'><span class='num'>30.</span>Section opener</div><div class='ng' onclick='goto(30)'><span class='num'>31.</span>Home Depot Two-Way Relationship (opener)</div><div class='ng' onclick='goto(31)'><span class='num'>32.</span>The HD DSM Portal — overview.</div><div class='ng' onclick='goto(32)'><span class='num'>33.</span>What the DSM sees.</div><div class='ng' onclick='goto(33)'><span class='num'>34.</span>What flows back to Home Depot.</div><div class='ng' onclick='goto(34)'><span class='num'>35.</span>Section opener</div><div class='ng' onclick='goto(35)'><span class='num'>36.</span>Multi-District & Multi-Team (opener)</div><div class='ng' onclick='goto(36)'><span class='num'>37.</span>One platform, many territories.</div><div class='ng' onclick='goto(37)'><span class='num'>38.</span>Stats stay in their lane.</div><div class='ng' onclick='goto(38)'><span class='num'>39.</span>One brand. One customer experience.</div><div class='ng' onclick='goto(39)'><span class='num'>40.</span>Role Architecture & Accountability (opener)</div><div class='ng' onclick='goto(40)'><span class='num'>41.</span>Work routes by event.</div><div class='ng' onclick='goto(41)'><span class='num'>42.</span>Role-based accounts — every role, every level.</div><div class='ng' onclick='goto(42)'><span class='num'>43.</span>HR & Admin — baked in.</div><div class='ng' onclick='goto(43)'><span class='num'>44.</span>Field Sales Tools (opener)</div><div class='ng' onclick='goto(44)'><span class='num'>45.</span>Tools for D2D.</div><div class='ng' onclick='goto(45)'><span class='num'>46.</span>Tools inside Home Depot.</div><div class='ng' onclick='goto(46)'><span class='num'>47.</span>Executive Dashboard / KPIs.</div><div class='ng' onclick='goto(47)'><span class='num'>48.</span>Role impersonation — View As.</div><div class='ng' onclick='goto(48)'><span class='num'>49.</span>Finance & operating brief.</div><div class='ng' onclick='goto(49)'><span class='num'>50.</span>Industry Flexibility (opener)</div><div class='ng' onclick='goto(50)'><span class='num'>51.</span>One chassis, eight verticals.</div><div class='ng' onclick='goto(51)'><span class='num'>52.</span>How our software helps Home Depot.</div><div class='ng' onclick='goto(52)'><span class='num'>53.</span>Same experience. Every category.</div><div class='ng' onclick='goto(53)'><span class='num'>54.</span>What the roadmap looks like.</div><div class='ng' onclick='goto(54)'><span class='num'>55.</span>Close (opener)</div><div class='ng' onclick='goto(55)'><span class='num'>56.</span>What we&apos;d love your input on.</div><div class='ng' onclick='goto(56)'><span class='num'>57.</span>The one line.</div><div class='ng' onclick='goto(57)'><span class='num'>58.</span>Close</div><div class='ng' onclick='goto(58)'><span class='num'>59.</span>Appendix (opener)</div><div class='ng' onclick='goto(59)'><span class='num'>60.</span>Section navigation — jump anywhere.</div><div class='ng' onclick='goto(60)'><span class='num'>61.</span>Vertical adaptations — at a glance.</div><div class='ng' onclick='goto(61)'><span class='num'>62.</span>Build status — beta-honest.</div><div class='ng' onclick='goto(62)'><span class='num'>63.</span>Module reference.</div></div>
   </div>
 </div>
 <script>
